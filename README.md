@@ -1,2 +1,0 @@
-# QuikDev
-A QuickDev Project
