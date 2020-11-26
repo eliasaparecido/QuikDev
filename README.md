@@ -3,17 +3,15 @@ A QuickDev Project
 
 Requer:
 
-Backend
+ PHP 7.4
 
-PHP 7.4
+ Composer
 
-Composer
+ Laravel
 
-Laravel
-
-Frontend
-
-Node
+ Node
+ 
+ Eslint
 
 #Backend
  
@@ -24,8 +22,6 @@ Node
     sudo apt install php-xml
     
     sudo apt-get install php-mbstring
-
-Composer install
 
 Criar arquivo .env com a variável MOVIE_APP_KEY com o valor da key que me foi passada.
 
