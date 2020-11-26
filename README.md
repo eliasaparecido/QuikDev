@@ -2,20 +2,30 @@
 A QuickDev Project
 
 Requer:
+
 Backend
+
 PHP 7.4
+
 Composer
+
 Laravel
+
 Frontend
+
 Node
 
 Para o backend
  
  
- Pode ser que no PHP que tenha que instalar 
+ Pode ser que no PHP que tenha que instalar
+ 
   no PHP
+  
     sudo apt-get update
+    
     sudo apt install php-xml
+    
     sudo apt-get install php-mbstring
 
 Composer install
