@@ -1,30 +1,12 @@
-# quikdev
+Frontend Feito em VueJs
 
-> A QuikDev Project
+Requer:
 
-## Build Setup
+Node
+Eslint
 
-``` bash
-# install dependencies
+tem o arquivo da api para setar a url em frontend/src/router/api.js
+
 npm install
 
-# serve with hot reload at localhost:8080
 npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
