@@ -15,7 +15,7 @@ Frontend
 
 Node
 
-Para o backend
+#Backend
  
  Pode ser que no PHP que tenha que instalar
   
@@ -33,7 +33,7 @@ php artisan key:generate
 
 php artisan serve 
 
-FrontEnd
+#Frontend
 
 tem o arquivo da api para setar a url em frontend/src/router/api.js
 
