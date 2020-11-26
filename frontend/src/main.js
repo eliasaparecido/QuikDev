@@ -13,6 +13,8 @@ Vue.use(IconsPlugin)
 
 Vue.config.productionTip = false
 
+Vue.component('genres', require('./../src/components/Genres.vue').default)
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

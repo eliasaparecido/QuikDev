@@ -10,33 +10,47 @@ class ListMovieController extends Controller
 {
 
     private $key;
+    private $url;
 
     public function __construct()
     {
         $this->key = env('MOVIE_APP_KEY');
+        $this->url = 'https://api.themoviedb.org/3/';
     }
 
     public function list()
     {
-        $response = Http::get('https://api.themoviedb.org/3/trending/movie/week?api_key='.$this->key);
+        $response = Http::get($this->url.'trending/movie/week?api_key='.$this->key);
+        return $response;
+    }
+
+    public function listpagination($page)
+    {
+        $response = Http::get($this->url.'trending/movie/week?api_key='.$this->key.'&page='.$page);
         return $response;
     }
 
     public function details($id)
     {
-        $response = Http::get('https://api.themoviedb.org/3/movie/'.$id.'?api_key='.$this->key.'&language=en-US');
+        $response = Http::get($this->url.'movie/'.$id.'?api_key='.$this->key.'&language=en-US');
         return $response;
     }
 
     public function genres()
     {
-        $response = Http::get('https://api.themoviedb.org/3/genre/movie/list?api_key='.$this->key.'&language=en-US');
+        $response = Http::get($this->url.'genre/movie/list?api_key='.$this->key.'&language=en-US');
         return $response;
     }
 
     public function searchname(Request $request)
     {
-        $response = Http::get('https://api.themoviedb.org/3/search/movie?api_key='.$this->key.'&query='.$request->title);
+        $response = Http::get($this->url.'search/movie?api_key='.$this->key.'&query='.$request->title);
+        return $response;
+    }
+
+    public function searchnamepagination($title, $page)
+    {
+        $response = Http::get($this->url.'search/movie?api_key='.$this->key.'&query='.$title.'&page='.$page);
         return $response;
     }
 }
