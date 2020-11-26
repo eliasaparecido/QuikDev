@@ -20,4 +20,4 @@ Realizei as tarefas conforme me foi solicitado, algumas eu não consegui realiza
 
 Achei o projeto interessante, não conhecia a API porém deu para realizar algumas tarefas.
 
-As informações estão no Read.me de cada pasta específica no branch develop
+As informações estão no Read.me do branch Develop
