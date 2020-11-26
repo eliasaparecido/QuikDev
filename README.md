@@ -17,10 +17,7 @@ Node
 
 Para o backend
  
- 
  Pode ser que no PHP que tenha que instalar
- 
-  no PHP
   
     sudo apt-get update
     
