@@ -79,7 +79,18 @@ export default {
       console.log('teste')
     },
     getSearch () {
-      console.log(this.searchTitle)
+      api
+      .post('search-name', {title: this.searchTitle})
+      .then((resp) => {
+        console.log(resp)
+        this.movies = resp.data
+        this.page = resp.data.page
+        this.rows = resp.data.total_pages
+        this.perPage = resp.data.results.length
+      })
+      .catch((e) => {
+        console.log(e)
+      })
     }
   }
 }

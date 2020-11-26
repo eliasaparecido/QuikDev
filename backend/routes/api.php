@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('list-movie', 'Api\ListMovieController@list');
 Route::get('details/{id}', 'Api\ListMovieController@details');
 Route::get('genres', 'Api\ListMovieController@genres');
+Route::post('search-name', 'Api\ListMovieController@searchname');
 
 // Route::middleware('auth:api')->get('/user', function (Request $request) {
 //     return $request->user();
